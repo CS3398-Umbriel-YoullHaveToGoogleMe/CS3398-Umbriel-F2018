@@ -1,3 +1,5 @@
+/* Manger Seperated from the rest so that it follows Single Responsiblity
+pricniple and it can be changed if needed */
 class Manager {
 	IWorker worker;
 
