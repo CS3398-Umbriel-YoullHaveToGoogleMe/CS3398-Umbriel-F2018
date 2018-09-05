@@ -1,5 +1,7 @@
 /* Manger Seperated from the rest so that it follows Single Responsiblity
 pricniple and it can be changed if needed */
+import threesolid;
+
 class Manager {
 	IWorker worker;
 
