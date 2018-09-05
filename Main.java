@@ -38,3 +38,6 @@ public class ThreeSolidMain
 
    }
  }
+
+ /* Main is seperated from other files so that imports or packages can be managed 
+ through here without affecting other files 
