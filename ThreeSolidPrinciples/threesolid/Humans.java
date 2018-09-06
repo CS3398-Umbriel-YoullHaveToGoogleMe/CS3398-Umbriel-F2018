@@ -1,7 +1,7 @@
 /*************************************************************
 Matthew Stephens
 This file contains the Worker and Super Worker Classes, both 
-implimenting the IEmployee interface which inherits from the
+Implementing the IEmployee interface which inherits from the
 IWorker interface. The use of the segregated interfaces allows
 these classes to be extended further while being closed for
 modification.
@@ -11,9 +11,9 @@ package threesolid;
 
 import Java.lang.io;
 
-    public class Worker implements IEmployee(){
+    public class Humans implements@ IEmployee(){
         public void work(){
-            System.out.println("Worker working...");
+            System.out.println("Worker working..." );
         }
 
         public void eat(){
@@ -22,7 +22,7 @@ import Java.lang.io;
 
     };
 
-    public class SuperWorker implements IEmployee(){
+    public class SuperWorker implements@ IEmployee(){
         public void work(){
             System.out.println("SuperWorker is soopa working...");
         }

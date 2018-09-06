@@ -12,7 +12,7 @@ import java.io.*;
 //import threesolid.IWorker;
 
 
-public class ThreeSolidMain
+public class Main
 {   
 
    public static Manager tsManager = new Manager();
