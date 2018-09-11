@@ -5,43 +5,31 @@ may not be able to apply the single responsilbity principle here. Interface Segr
 
 package threesolid;
 
-import java.awt.*;        // Using AWT container and component classes
-import java.awt.event.*;  // Using AWT event classes and listener interfaces
-import java.io.*;
-
-//import threesolid.IWorker;
-
-
-public class ThreeSolidMain
-{   
-
-   public static Manager tsManager = new Manager();
-
+public class Main {   
    // The entry main() method
-   public static void main(String[] args) 
-   {
+   public static void main(String[] args) {
+	   Manager tsManager = new Manager();
  
-      try 
-      {
-         System.out.format("Starting ... \n");               
-      } 
-      catch (Exception main_except)
-      {
-         main_except.printStackTrace();
-      }
+	   try 
+	   {
+		   System.out.format("Starting ... \n");               
+	   } 
+	   catch (Exception main_except)
+	   {
+		   main_except.printStackTrace();
+	   }
+      
+	   try 
+	   {
+		   System.out.format("Stopping ... \n");               
+	   } 
+	   catch (Exception main_except)
+	   {
+		   main_except.printStackTrace();
+	   }
 
-            try 
-      {
-         System.out.format("Stopping ... \n");               
-      } 
-      catch (Exception main_except)
-      {
-         main_except.printStackTrace();
-      }
-
-      System.exit(0);
-
+	   System.exit(0);
    }
- }
+};
 
  
