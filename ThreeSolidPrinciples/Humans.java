@@ -9,27 +9,22 @@ modification.
 
 package threesolid;
 
-import Java.lang.io;
+class Worker implements IWorker, IEmployee {
+	public void work(){
+		System.out.println("Worker working...");
+	}
 
-    public class Worker implements IEmployee(){
-        public void work(){
-            System.out.println("Worker working...");
-        }
+	public void eat(){
+		System.out.println("Worker eating...");
+	}
+};
 
-        public void eat(){
-            System.out.println("Worker eating...");
-        }
+class SuperWorker implements IWorker, IEmployee {
+	public void work(){
+		System.out.println("SuperWorker is soopa working...");
+	}
 
-    };
-
-    public class SuperWorker implements IEmployee(){
-        public void work(){
-            System.out.println("SuperWorker is soopa working...");
-        }
-
-        public void eat(){
-            System.out.println("SuperWorker is soopa eating...");
-        }
-
-
-    };
+	public void eat(){
+		System.out.println("SuperWorker is soopa eating...");
+	}
+};
