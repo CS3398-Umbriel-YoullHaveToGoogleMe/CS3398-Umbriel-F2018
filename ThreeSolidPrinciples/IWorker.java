@@ -4,6 +4,9 @@
  *  by classes that only need to use the work function.  This follows
  *  the interface segregation principle.
  */
+
+package threesolid;
+
 public interface IWorker {
 	public void work();
 }
